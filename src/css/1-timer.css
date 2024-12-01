@@ -1,0 +1,13 @@
+.timer {
+}
+.field {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}
+.value {
+
+    
+}
+.label {
+}
