@@ -1,13 +1,78 @@
 .timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
 }
+
+.flatpickr-input {
+  width: 272px;
+  height: 40px;
+  border-radius: 4px;
+  padding-left: 16px;
+  padding-bottom: 8px;
+  padding-right: 16px;
+  padding-top: 8px;
+  background-color: #fff;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+
+.flatpickr-input:hover {
+  border-color: #2e2f42;
+}
+
+.flatpickr-input:active {
+  border-color: #6c8cff;
+}
+
+.flatpickr-input:disabled {
+  border-color: #cfcfcf;
+  background-color: #fafafa;
+}
+
+.start-btn {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #989898;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 75px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+}
+.start-btn:hover {
+  background-color: #6c8cff;
+}
+
+.start-btn:disabled {
+  background-color: #cfcfcf;
+}
+
 .field {
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 }
 .value {
-
-    
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
 }
 .label {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #2e2f42;
 }

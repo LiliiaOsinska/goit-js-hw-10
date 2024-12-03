@@ -2,8 +2,8 @@ import flatpickr from 'flatpickr';
 import 'flatpickr/dist/flatpickr.min.css';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-// import errorImage from 
-
+import errorImage from '../img/icon-error.svg';
+import closeImage from '../img/icon-close.svg';
 const dateTime = document.querySelector('#datetime-picker');
 const btn = document.querySelector('button[data-start]');
 const value = document.querySelectorAll('.value');
@@ -20,7 +20,6 @@ const dataTimeNew = flatpickr('#datetime-picker', {
   dateFormat: 'Y-m-d H:i',
   defaultDate: new Date(),
   minuteIncrement: 1,
-// Підключення бібліотеки iziToast
   onClose(selectedDates) {
     currentDate = new Date();
     console.log(selectedDates[0]);
@@ -35,9 +34,9 @@ const dataTimeNew = flatpickr('#datetime-picker', {
         messageSize: '18px',
         backgroundColor: '#f03838',
         position: 'topRight',
-        iconUrl: '${errorImage}',
+        iconUrl: `${errorImage}`,
         iconColor: '#73020C',
-        close: false,
+        // closeUrl: `${closeImage}`,
         timeout: 2000,
         progressBar: false,
       });
@@ -78,6 +77,8 @@ function convertMs(ms) {
   const seconds = Math.floor((((ms % day) % hour) % minute) / second);
   return { days, hours, minutes, seconds };
 }
+
+btn.classList.add('start-btn');
 
 console.log(convertMs(2000)); // {days: 0, hours: 0, minutes: 0, seconds: 2}
 console.log(convertMs(140000)); // {days: 0, hours: 0, minutes: 2, seconds: 20}

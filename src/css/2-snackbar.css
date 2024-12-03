@@ -1,0 +1,51 @@
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 360px;
+  margin: 0;
+  padding: 0;
+}
+
+.label-delay {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 360px;
+  height: 72px;
+  margin-bottom: 16px;
+}
+
+.fieldset-box {
+  display: flex;
+  justify-content: space-evenly;
+  width: 360px;
+  height: 59px;
+  padding: 0;
+  margin-bottom: 24px;
+}
+
+.button-create {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 360px;
+  height: 40px;
+  background-color: #4e75ff;
+  border: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.button-create:hover {
+  background-color: #6c8cff;
+}
+
+.input-delay {
+  width: 360px;
+  height: 40px;
+  padding: 0;
+}
